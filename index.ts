@@ -1,9 +1,9 @@
-import express from 'express';
+import server from './server';
 
-const app = express();
+const app = server.create();
+
 const PORT = 8080;
-app.get('/',(req,res)=>res.send('Express + Typescript server'));
 
 app.listen(PORT,()=>{
-    console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`)
+    console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`)
 })
