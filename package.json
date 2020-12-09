@@ -4,6 +4,7 @@
   "description": "A dockerized typescript template repository, with eslint, jest and express",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./**/*.ts --cache ",
     "start": "nodemon index.ts",
     "build": "tsc --project ./",
     "test": "jest --coverage --detectOpenHandles",
@@ -27,6 +28,9 @@
     "@types/jest": "^26.0.18",
     "@types/node": "^14.14.11",
     "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
     "jest": "^26.6.3",
     "nodemon": "^2.0.6",
     "supertest": "^6.0.1",
