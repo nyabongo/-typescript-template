@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon index.ts",
     "build": "tsc --project ./",
-    "test": "jest --coverage"
+    "test": "jest --coverage --detectOpenHandles",
+    "test:watch": "jest --watchAll --detectOpenHandles"
   },
   "repository": {
     "type": "git",
