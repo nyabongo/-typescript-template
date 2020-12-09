@@ -12,11 +12,9 @@ const mockApp = {
 
 
 describe('EntryPoint', () => {
-    let consoleSpy: jest.SpyInstance<void, [message?: any, ...optionalParams: any[]]>;
     beforeAll(() => {
         const spy = jest.spyOn(server, 'create');
         spy.mockReturnValue(mockApp as unknown as Express);
-        consoleSpy = jest.spyOn(console, 'log');
     });
     it('should return  start the server with the given port', () => {
         require('.');
