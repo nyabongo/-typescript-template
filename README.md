@@ -2,17 +2,17 @@
 A typescript template repository, with eslint, jest, express and nodemon
 
 ## Installation
-* Copy or clone the repository with 
+Copy or clone the repository with 
 
-    `git clone git@github.com:nyabongo/ts-template.git`
+    git clone git@github.com:nyabongo/ts-template.git
 
-* enter the new repository with 
+enter the new repository with 
   
-    `cd ts-template`
+    cd ts-template
 
-* Install Dependencies
+Install Dependencies
 
-    `npm i`
+    npm i
 
 ## Scripts
 
@@ -36,3 +36,13 @@ Runs unit tests
 ### npm run test:watch
 
 Runs unit tests in watch mode 
+
+## Docker
+
+To run on docker, you can build using the following command
+
+    docker build -t ts-template .
+
+Then run using
+
+    docker run -e PORT=6006 -p 8080:6006 ts-template
