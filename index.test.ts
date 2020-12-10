@@ -17,8 +17,10 @@ describe('EntryPoint', () => {
         spy.mockReturnValue(mockApp as unknown as Express);
     });
     it('should return  start the server with the given port', () => {
+        const port = '9876';
+        process.env.PORT = port
         require('.');
-        expect(mockApp.listen).toHaveBeenCalledWith(8080, expect.any(Function));
+        expect(mockApp.listen).toHaveBeenCalledWith(port, expect.any(Function));
     });
 
 });

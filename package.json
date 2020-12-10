@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./**/*.ts --cache ",
-    "start": "nodemon index.ts",
+    "start": "PORT=8008 nodemon index.ts ",
     "build": "tsc --project ./",
     "test": "jest --coverage --detectOpenHandles",
     "test:watch": "jest --watchAll --detectOpenHandles"
